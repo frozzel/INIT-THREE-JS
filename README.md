@@ -1,3 +1,8 @@
+<div>
+<a href=""><img src="https://github.com/frozzel/INIT-THREE-JS/blob/1e965cbcd333bb354aa367da8412b6b46c589332/assets/Screen%20Recording%202024-10-09%20at%202.45.30%E2%80%AFPM.gif" align="center" height="" width="100%" ></a></div>
+
+
+
 # Three.js Project: Spinning Cube with Orbiting Spheres
 
 Welcome to the Three.js project, where we explore creating a 3D animation featuring a spinning cube with orbiting spheres, all rendered in the browser using WebGL without any plugins. This project demonstrates the basic setup and use of Three.js, along with implementing mouse controls for user interaction.
@@ -52,6 +57,7 @@ yarn add three
 
 1. Open `index.html` in a web browser to view the animation.
 2. Use your mouse to click and drag, allowing you to spin the cube and spheres in any direction.
+3. Use `npm start` in terminal to load live server
 
 ## Features
 
@@ -72,6 +78,7 @@ Contributions are welcome! If you have suggestions or improvements to make, feel
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+[![Github license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
