@@ -5,3 +5,28 @@ body {
 canvas {
     display: block;
 }
+ul {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: center;
+    width: 100%;
+    margin: 1;
+    padding: 1;
+}
+li {
+    display: block;
+    padding: .3rem;
+    list-style-type: none;
+}
+
+a, a:hover, a:visited {
+    color: inherit;
+    text-decoration: none;
+   }
+a, a:hover, a:active {
+    color: greenyellow;
+    text-decoration: none;
+
+}
+
+  
