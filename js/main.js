@@ -1,6 +1,7 @@
 import * as THREE from '../node_modules/three/build/three.module.js';
 import { TrackballControls } from "https://cdn.skypack.dev/three-trackballcontrols-ts@0.2.3";
 
+
 // Scene
 const scene = new THREE.Scene();
 
