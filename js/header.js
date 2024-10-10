@@ -13,8 +13,8 @@ template.innerHTML = `
         ">
         <ul>
             <li> <a href="/">Home</a></li>
-            <li><a href="/cube.html" >Cube</a></li>
-            <li>Right click to pan</li>
+            <li><a href="cube.html" >Cube</a></li>
+            <li><a href="lines.html" >Lines</a></li>
         </ul>
        
     </div>
