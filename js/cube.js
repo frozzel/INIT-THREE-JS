@@ -8,7 +8,7 @@ camera.position.z = 5;
 
 
 const renderer = new THREE.WebGLRenderer();
-renderer.setClearColor("#233143"); // Set background colour
+renderer.setClearColor("#1F1F1F"); // Set background colour
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
@@ -25,16 +25,25 @@ controls.rotateSpeed = 4;
 controls.dynamicDampingFactor = 0.15;
 
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-const cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
+const edges = new THREE.EdgesGeometry( geometry ); 
+const line = new THREE.LineSegments( edges, new THREE.LineBasicMaterial( { 
+    color: 0xffffff, 
+    linewidth: 9,
+    linecap: 'round', //ignored by WebGLRenderer
+	linejoin:  'round' //ignored by WebGLRenderer
+} ) );
+const material = new THREE.MeshBasicMaterial( { color: 0x0094EE } );
+const cube = new THREE.Mesh( geometry, material, line );
+scene.add( cube, line );
 
 
 function animate() {
     controls.update();
 
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
+    cube.rotation.x += 0.01 
+    line.rotation.x += 0.01;
+    cube.rotation.y += 0.01 
+    line.rotation.y += 0.01;
 	renderer.render( scene, camera );
 }
 

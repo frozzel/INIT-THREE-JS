@@ -10,13 +10,13 @@ const camera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
   0.6,
-  1200
+  1000
 );
-camera.position.z = 5; // Set camera position
+camera.position.z = 30; // Set camera position
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setClearColor("#233143"); // Set background colour
+renderer.setClearColor("#1F1F1F"); // Set background colour
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement); // Add renderer to HTML as a canvas element
 
@@ -33,7 +33,7 @@ controls.rotateSpeed = 4;
 controls.dynamicDampingFactor = 0.15;
 
 //create a blue LineBasicMaterial
-const material = new THREE.LineBasicMaterial( { color: 0x0000ff } );
+const material = new THREE.LineBasicMaterial( { color: 0x0094EE } );
 const points = [];
 points.push( new THREE.Vector3( - 10, 0, 0 ) );
 points.push( new THREE.Vector3( 0, 10, 0 ) );

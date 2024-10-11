@@ -5,12 +5,13 @@ template.innerHTML = `
         position: fixed;
         width: 100vw;
         display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		flex-direction: row;
 		color: white;
-        background-color: #000;
+        background-color: #0a0a0a;
         ">
+        <div class='logo'>
+            <h3>three.js tutorial</h3>
+        </div>
         <ul>
             <li> <a href="/">Home</a></li>
             <li><a href="cube.html" >Cube</a></li>

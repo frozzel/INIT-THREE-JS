@@ -16,7 +16,7 @@ camera.position.z = 5; // Set camera position
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setClearColor("#233143"); // Set background colour
+renderer.setClearColor("#1F1F1F"); // Set background colour
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement); // Add renderer to HTML as a canvas element
 
@@ -44,10 +44,11 @@ for (let i = 0; i < 4; i++) {
   scene.add(sphereMeshes[i]); // Add sphere to canvas
 }
 
-const newSphere = new THREE.SphereGeometry(10, 32, 32);
+const newSphere = new THREE.SphereGeometry(1, 32, 32);
 const sphereMaterial1 = new THREE.MeshLambertMaterial({color: 0xC56CEF});
 const sphereMesh1 = new THREE.Mesh(newSphere, sphereMaterial1);
 scene.add(sphereMesh1)
+
 
 // Lights
 const lights = []; // Storage for lights
