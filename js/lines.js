@@ -46,6 +46,8 @@ const line = new THREE.Line( geometry, material );
 scene.add( line );
 
 function animate() {
+    line.rotation.y += 0.01;
+    line.rotation.x += 0.01;
     controls.update();
 	renderer.render( scene, camera );
 }

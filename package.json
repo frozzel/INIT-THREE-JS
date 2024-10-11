@@ -4,6 +4,12 @@
     "three": "^0.169.0"
   },
   "scripts": {
-    "start": "npx live-server"
+    "start": "npx live-server",
+    "dev": "vite", 
+    "build": "vite build", 
+    "preview": "vite preview" 
+  },
+  "devDependencies": {
+    "vite": "^5.4.8"
   }
 }
