@@ -16,6 +16,7 @@ template.innerHTML = `
             <li> <a href="/">Home</a></li>
             <li><a href="cube.html" >Cube</a></li>
             <li><a href="lines.html" >Lines</a></li>
+            <li><a href="text.html" >Text</a></li>
         </ul>
        
     </div>
